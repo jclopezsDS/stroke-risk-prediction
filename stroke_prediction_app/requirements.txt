@@ -1,0 +1,17 @@
+# Core ML & Data Science (for Streamlit app)
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
+
+# Machine Learning Models
+xgboost==1.7.6
+
+# Streamlit App
+streamlit==1.36.0
+
+# Model Persistence
+joblib==1.4.2
+
+# Jupyter (for notebook) - not needed for Streamlit deployment
+# jupyter>=1.0.0
+# ipykernel>=6.25.0

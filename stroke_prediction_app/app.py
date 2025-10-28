@@ -2,9 +2,14 @@ import streamlit as st
 import pandas as pd
 import joblib
 import shap
+import os
 from utils import preprocess_input, generate_shap_plot
 
-model = joblib.load('xgb_model.pkl')
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(SCRIPT_DIR, 'xgb_model.pkl')
+
+model = joblib.load(MODEL_PATH)
 
 st.title("Stroke Risk Prediction")
 st.write("Enter patient details to predict stroke risk. All fields are required.")
